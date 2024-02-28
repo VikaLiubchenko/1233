@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    
+
+        <h1>Форма</h1>
+
+            <!-- Форма для зв'язку -->
+        <form action="/submit" method="post">
+
+             <!-- Поле для введення імені -->
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" placeholder="Введіть ім'я" required>
+            <br>
+            <br>
+            <!-- Поле для введення віку -->
+            <label for="age">Вік:</label>
+            <input type="number" id="age" name="age" placeholder="Введіть вік " required>
+            <br>
+            <br>
+
+             <!-- Поля для вибору статі -->
+            <label>Стать:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Чоловік</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Жінка</label>
+            <br>
+            <br>
+
+              <!-- Поле для введення паролю -->
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" placeholder="Введіть пароль " required>
+            <br>
+            <br>
+    
+             <!-- Поле для вибору запам'ятовування інформації -->
+            <input type="checkbox" id="remember" name="remember" value="remember">
+            <label for="remember">Запам'ятати мене</label>
+            <br>
+            <br>
+
+              <!-- Випадаючий список для вибору міста -->
+            <label for="city">Місто:</label>
+            <select id="city" name="city">
+                <option value="Lviv">Львів</option>
+                <option value="Kyiv">Київ</option>
+                <option value="Odesa">Одеса</option>
+            </select>
+            <br>
+            <br>
+             
+            <!-- Поле для введення повідомлення -->
+            <label for="message">Повідомлення:</label>
+            <input type="message" id="message" name="mesagge" placeholder="Введіть повідомлення" required>
+            <br>
+            <br>
+    
+             <!-- Кнопка для надсилання форми -->
+            <input type="submit" value="Надіслати">
+        </form>
+    
+   
+</body>
+</html>
